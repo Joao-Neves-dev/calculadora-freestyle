@@ -1,0 +1,103 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("background\ yoshi.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.calculadora {
+    background: rgba(20, 20, 20, 0.55);
+    width: 320px;
+    border-radius: 20px;
+    padding: 25px;
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(230, 230, 230, 0.048);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#tela {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: right;
+    font-size: 25px;
+    color: #222;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.linha-botoes {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+button {
+    height: 55px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #e4fdda;
+    color: #222222;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+    flex: 1;
+}
+
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+.operador {
+    background-color: #23723d;
+    color: white;
+}
+
+.botao-limpar {
+    background-color: #e63946;
+    color: white;
+}
+
+.botao-igual{
+    background-color: rgb(255, 102, 0);
+    color: white;
+}
+
